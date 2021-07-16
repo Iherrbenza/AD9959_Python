@@ -3,7 +3,7 @@
  *  
  * The system is uses a 32 pin
  * ESP32-DevKitC Core Board ESP32
- * https://www.espressif.com/en/products/devkits/esp32-devkitc/overview
+ * https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-devkitm-1-v1.html
  * 
  * // Hardware pin connections 
 
