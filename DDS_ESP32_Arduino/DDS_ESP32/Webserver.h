@@ -1,3 +1,10 @@
+/* WiFi functionalities 
+ *  
+ * Put here you ssd/password to connect the board to your local network 
+ * 
+ * created 16/07/2021 by Ivan Herrera Benzaquen
+ * at SWinburne University of Technology
+ */
 
 // WiFi variables
 const char* ssid = "";

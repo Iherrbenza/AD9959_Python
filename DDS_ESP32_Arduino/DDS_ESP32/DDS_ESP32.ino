@@ -1,6 +1,24 @@
 
 /* Control a AD9959 DDS with a ESP32 microcontroller 
+ *  
+ * The system is uses a 32 pin
+ * ESP32-DevKitC Core Board ESP32
+ * https://www.espressif.com/en/products/devkits/esp32-devkitc/overview
  * 
+ * // Hardware pin connections 
+
+//  ESP32             -> AD9959    
+//  Pin GND GND       -> GND     
+//  Pin 14  SCLK      -> SCLK      
+//  Pin 12  MISO      -> SDIO2     
+//  Pin 13  MOSI      -> SDIO0    
+//  Pin 15  CS        -> CSB       
+//  Pin 27  UPD       -> IO Update 
+//  Pin 26  RST       -> resetPin  
+//  Pin 32  SYNC      -> SDIO3     
+//  Pin 19  Interrupt -> none (external trigger)
+ * 
+ *  
  * created 16/07/2021 by Ivan Herrera Benzaquen
  * at SWinburne University of Technology
  */
