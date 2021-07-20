@@ -1,12 +1,12 @@
 
 /* Control a AD9959 DDS with a ESP32 microcontroller 
  *  
- * The system is uses a 32 pin
- * ESP32-DevKitC Core Board ESP32
+ * This document form part of a system to control a AD9959 (eval_board) with Python and/or Labscript using a ESP32 microcontroller via WiFi.
+ * This the program to upload into the ESP32 writem in Arduino enviroment, needs a extrafile "Webserver.h" into the folder where to include the WiFi stuff.
+ * The system is uses a 38 pin, ESP32-DevKitC Core Board ESP32
  * https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-devkitm-1-v1.html
  * 
  * // Hardware pin connections 
-
 //  ESP32             -> AD9959    
 //  Pin GND GND       -> GND     
 //  Pin 14  SCLK      -> SCLK      
@@ -20,7 +20,7 @@
  * 
  *  
  * created 16/07/2021 by Ivan Herrera Benzaquen
- * at SWinburne University of Technology
+ * at Swinburne University of Technology
  */
 
  
@@ -137,7 +137,7 @@ void loop() {
           }
 
         // sofware reset communication DDS--------------------------------------------------
-        if(ch == 's'){
+        if(ch == 'c'){
           reset_comm();
           Serial.println("DDS communications reset");
           }
@@ -253,7 +253,7 @@ void IO_update(){
 
 void init_DDS() {
   // hard code of the initialisation of the DDS
-  // the will reset with all the amp values to zero and something more
+  // the will reset with all the amp values to zero and something more to adapt suiting your needs
   digitalWrite(CS, HIGH);
   digitalWrite(UPD, LOW); 
   digitalWrite(RST, LOW); 
@@ -317,7 +317,6 @@ void memory_spi(unsigned long long input){
 
  void memory_storage(String input){
   // save in memory the string received from the WiFi to the SPi channel
-
   unsigned int l = input.length();
   int j = 0;   
   String c = ""; 
