@@ -8,3 +8,6 @@ As well is integrated into a [Labscript](https://github.com/labscript-suite) env
 
 ## AD9959
 [AD9959](https://www.analog.com/en/products/ad9959.html#) DDS from Analog Devices. 4 channels with modulation and sweep capabilities. 
+
+
+Bear in mind that this is a project on development, bugs may appear.
