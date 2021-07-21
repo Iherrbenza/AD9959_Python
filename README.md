@@ -20,7 +20,7 @@ This folder contains the program of the microcontroller written in an Arduino en
 Jupyter notebook file with a DDS class and examples to ccontrol the DDS with the ESP32.
 
 ## DDS_ESP32_PCB
-Gerber files for a PCB that interconnect the ESP32 and and a AD9959 evaluation board, isolators are placed but not used, can be bypasssed. The schematic and the BOOM file with a list of components aree included. 
+Gerber files for a PCB that interconnect the ESP32 and and a AD9959 evaluation board, isolators are placed but not used, can be bypassed. The schematic and the BOOM file with a list of components aree included. 
 
 ## DDS_ESP32_lab
 Files to interface with the Labscript enviroment.
