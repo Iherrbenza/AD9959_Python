@@ -21,8 +21,8 @@ Jupyter notebook file with a DDS class and examples to ccontrol the DDS with the
 
 ## DDS_ESP32_PCB
 Gerber files for a PCB that interconnect the ESP32 and and a AD9959 evaluation board. 
-Isolators, interrupt2, filterl and pull-down pull-up resistors footprints are placed but not used, can be bypassed or no populated. You will nee to use a jumper on R1 to conect the grounds in case not using isolators. And all the 5V power section can be unpopulated as well if you don't use the isolators.
-Jumper R16 its necessary if you don't want to control the powerdown (floating is a problem). 
+Isolators, interrupt_1, filter and pull-down pull-up resistors footprints are placed but not used, can be bypassed or not populated. You will need to use a jumper on R1 to connect the grounds in case no using isolators. And all the 5V power section can be unpopulated as well if you don't use the isolators.
+Jumper R16 is necessary if you don't want to control the powerdown (floating is a problem). 
 
 The schematic and the BOOM file with a list of components are included.  
 
