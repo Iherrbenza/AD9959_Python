@@ -14,7 +14,7 @@ The system is uses a 38 pin, ESP32-DevKitC Core Board ESP32 to interface the AD9
 and then write when a trigger arrives to an interrup pin. The ESP32 will comunicate with the computer via WiFi in alocal network.
 
 ## DDS_ESP32_Arduino
-This folder contains the program of the microcontroller written in an Arduino enviroment. Version 1.0.4 from espressif in borad manager was used to develop the program.
+This folder contains the program of the microcontroller written in an Arduino enviroment. Version 1.0.4 from espressif in borad manager was used to develop the program. A the begining of the program the ESP32 will print out via serial MacAddress, and IP/password in case of being connected to the local network, setup a fixed IP for the board to avoid IP hopping.
 
 ## DDS_ESP32_Jupyter
 Jupyter notebook file with a DDS class and examples to ccontrol the DDS with the ESP32.
